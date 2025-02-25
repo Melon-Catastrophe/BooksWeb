@@ -1,19 +1,19 @@
 # README
 
-This is an simple ASP.NET web application. It does the following:
+This is a simple ASP.NET web application. It does the following:
 
 - Implements a mock database providing a list of books.
 - Utilizes a controller that retrieves book data, applies a transformation, and passes the BookViewModel to the view (Index.cshtml).
 - Uses a manual mapper to transform the Book object to a BookViewModel object.
-- Implements a view model (BookViewModel.cs) to structure the data.
-- Creates a view (Index.cshtml) that displays the book list in an HTML table.
-- Creates a view (Details.cshtml) for displaying additional book details.
+- Implements a View Model (BookViewModel.cs) to structure the data.
+- Creates a View (Index.cshtml) that displays the book list in an HTML table.
+- Creates a View (Details.cshtml) for displaying additional book details.
 
 ## Details
 
 ### Book Model
 
-The Book Model contains represents a Book entity on the mocked database. It contains the following properties:
+The Book Model represents a Book entity on the mocked database. It contains the following properties:
 
 ```c#
 public class Book
@@ -37,6 +37,8 @@ public class BookViewModel
     public string PublishedYearDisplay { get; set; }
 }
 ```
+
+Note that 'Id' is not a property of BookViewModel.
 
 ### Book Mapper
 
@@ -65,6 +67,6 @@ public class MockBookRepository
 
 ### Additional Book Details
 
-A details View is shown when clicking on a book's title. For now, the only details shown are the Title, Author, and Publication Year. This page shows how to dynamically show content based on some kind of unique ID. 
+A details View is shown when clicking on a book's title. For now, the only details shown are the Title, Author, and Publication Year. This content is dynamically shown based on a unique ID. 
 
 To get back to the Home screen from the Additional Details page, click on the "Back to Home" button.
