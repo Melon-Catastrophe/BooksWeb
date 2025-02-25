@@ -65,6 +65,6 @@ public class MockBookRepository
 
 ### Additional Book Details
 
-A details view is shown when clicking on a book's title. For now, the only details shown are the Title, Author, and Publication Year. This page shows how to dynamically show content based on some kind of unique ID. 
+A details View is shown when clicking on a book's title. For now, the only details shown are the Title, Author, and Publication Year. This page shows how to dynamically show content based on some kind of unique ID. 
 
 To get back to the Home screen from the Additional Details page, click on the "Back to Home" button.
