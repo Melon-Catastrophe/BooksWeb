@@ -1,18 +1,18 @@
 # README
 
-This is an simple ASP.NET web application. It does the following:
+This is a simple ASP.NET web application. It does the following:
 
 - Implements a mock database providing a list of books.
 - Utilizes a controller that retrieves book data, applies a transformation, and passes the BookViewModel to the view (Index.cshtml).
 - Uses a manual mapper to transform the Book object to a BookViewModel object.
-- Implements a view model (BookViewModel.cs) to structure the data.
-- Creates a view (Index.cshtml) that displays the book list in an HTML table.
+- Implements a View Model (BookViewModel.cs) to structure the data.
+- Creates a View (Index.cshtml) that displays the book list in an HTML table.
 
 ## Details
 
 ### Book Model
 
-The Book Model contains represents a Book entity on the mocked database. It contains the following properties:
+The Book Model represents a Book entity on the mocked database. It contains the following properties:
 
 ```c#
 public class Book
@@ -36,6 +36,8 @@ public class BookViewModel
     public string PublishedYearDisplay { get; set; }
 }
 ```
+
+Note that 'Id' is not a property of BookViewModel.
 
 ### Book Mapper
 
@@ -61,4 +63,3 @@ public class MockBookRepository
     }
 }
 ```
-
