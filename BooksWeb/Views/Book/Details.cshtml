@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Book Details";
+}
+
+@model BookViewModel
+
+<div class="text-center">
+    <h1 class="display-4">Details</h1>
+
+    <p class="text-body text-start">Title: @Model.Title</p>
+    <p class="text-body text-start">Author: @Model.Author</p>
+    <p class="text-body text-start">Publication Year: @Model.PublishedYearDisplay</p>
+
+    <a class="btn btn-primary" asp-action="Index">Back to Home</a>
+</div>
