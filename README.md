@@ -7,6 +7,7 @@ This is an simple ASP.NET web application. It does the following:
 - Uses a manual mapper to transform the Book object to a BookViewModel object.
 - Implements a view model (BookViewModel.cs) to structure the data.
 - Creates a view (Index.cshtml) that displays the book list in an HTML table.
+- Creates a view (Details.cshtml) for displaying additional book details.
 
 ## Details
 
@@ -62,3 +63,8 @@ public class MockBookRepository
 }
 ```
 
+### Additional Book Details
+
+A details view is shown when clicking on a book's title. For now, the only details shown are the Title, Author, and Publication Year. This page shows how to dynamically show content based on some kind of unique ID. 
+
+To get back to the Home screen from the Additional Details page, click on the "Back to Home" button.
