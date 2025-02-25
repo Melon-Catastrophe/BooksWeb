@@ -49,6 +49,7 @@ public class BookMapper : IBookMapper
 
         return new Book()
         {
+            Id = default,
             Title = bookViewModel.Title,
             Author = bookViewModel.Author,
             PublishedYear = isDisplayYearNumeric ? result : Int32.Parse(bookViewModel.PublishedYearDisplay.Substring(0, 4))

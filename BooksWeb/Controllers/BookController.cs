@@ -10,7 +10,10 @@ public class BookController : Controller
 {
     private readonly MockBookRepository booksRepository = new();
     private readonly BookMapper mapper = new();
-    
+
+    /// <summary>
+    /// The landing page of the web app. Displays a table of all the books in the database.
+    /// </summary>
     public IActionResult Index()
     {
         List<Book> books = booksRepository.GetAllBooks();
